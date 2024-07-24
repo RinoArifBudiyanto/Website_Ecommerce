@@ -1,0 +1,199 @@
+:root {
+  --primary: #41b549;
+  --bg: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: rgb(255, 146, 146);
+}
+
+/* Navrbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: index 9999;
+}
+
+.navbar .navbar-nama {
+  color: #41b549;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nama span {
+  color: brown;
+}
+
+.navbar .navbar-beranda a {
+  color: var(--primary);
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-beranda a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-beranda a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scale(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-beranda a:hover::after {
+  transform: scalex(1);
+}
+
+.navbar .navbar-extra a {
+  color: var(--primary);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+.search-box {
+  background-color: var(--bg);
+  height: 18px;
+  padding: 20px 15px;
+  border-radius: 50px;
+}
+
+.search-box input {
+  border: 1px solid black;
+  outline: none;
+  background: none;
+  border-radius: 30px;
+}
+
+/* Hero Section Wanita*/
+.kategori-wanita {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.kategori-wanita .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.contents h1 {
+  color: #070707;
+  padding-top: 80px;
+  font-size: 4em;
+  text-align: center;
+}
+
+/* Pilihan Section wanita */
+.choice-wanita .grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  align-items: center;
+  grid-gap: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.choice-grid img {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  object-fit: cover;
+}
+
+.grid > .choice-grid {
+  box-shadow: 5px 5px 5px 0 black;
+  border-radius: 5px;
+  transition: transform;
+}
+
+.choice-grid button {
+  background-color: #f6f2f2;
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 3px 3px;
+}
+
+/* section pria */
+.kategori-pria {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.kategori-pria .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.kategori-pria .content h1 {
+  color: #000;
+  font-size: 4em;
+}
+
+.content h1 {
+  color: #000;
+  padding-top: 20px;
+  font-size: 4em;
+  text-align: center;
+}
+
+/*  Choice Pria*/
+.choice-pria .grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  align-items: center;
+  grid-gap: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.choice-grid img {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  object-fit: cover;
+}
+
+.grid > .choice-grid {
+  box-shadow: 5px 5px 5px 0 black;
+  border-radius: 5px;
+  transition: transform;
+}
+
+.choice-grid button {
+  background-color: #f6f2f2;
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 3px 3px;
+}
